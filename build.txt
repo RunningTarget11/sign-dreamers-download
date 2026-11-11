@@ -1,0 +1,2 @@
+3
+First release: Gmail requests (Answer, Accept, Bill, Schedule), bookings, sign inventory, Square invoices, Google Calendar, display photos, and update checks.

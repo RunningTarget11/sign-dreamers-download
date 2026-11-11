@@ -1,0 +1,19 @@
+name: Publish release
+on:
+  push:
+    branches: [main]
+    paths: [build.txt]
+permissions:
+  contents: write
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Create release from the committed APK
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          N=$(head -1 build.txt | tr -dc '0-9')
+          NOTES=$(tail -n +2 build.txt)
+          gh release create "build-$N" SignDreamers.apk --title "Sign Dreamers build $N" --notes "$NOTES" --latest
