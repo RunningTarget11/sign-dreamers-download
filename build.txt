@@ -1,2 +1,2 @@
-3
-First release: Gmail requests (Answer, Accept, Bill, Schedule), bookings, sign inventory, Square invoices, Google Calendar, display photos, and update checks.
+4
+Splash screens centered and sized to fit the screen.
