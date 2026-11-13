@@ -1,2 +1,2 @@
-4
-Splash screens centered and sized to fit the screen.
+5
+New look: 3D home banner and 3D tab icons made in Blender.
